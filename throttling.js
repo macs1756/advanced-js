@@ -1,7 +1,5 @@
 //throttle limits the frequency of calls
 
-
-
 const fnExample = (name) => {
   console.log(`I called by ${name}`);
 }
@@ -28,13 +26,13 @@ const throttle = (fn, delay = 100) => {
 const throttledFn = throttle(fnExample)
 
 //very often
-throttledFn('Max')
-throttledFn('Ira')
-throttledFn('Roman')
+throttledFn('Max') // +
+throttledFn('Ira') // -
+throttledFn('Roman') // -
 
 //after 200ms
 setTimeout(() => {
-  throttledFn('Teddy')
+  throttledFn('Teddy') //+
 }, 700)
 
 
