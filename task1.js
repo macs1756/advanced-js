@@ -81,7 +81,6 @@ const fn = (exp) => {
 }
 
 // NEED TO FIX IT
-
 console.log(fn(tests[1]))
 console.log(fn(tests[2]))
 console.log(fn(tests[3]))
